@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- 생성자에 의한 자동 의존관계 설정 autowire="constructor" -->
+<bean id="articleDAO" class="com.bit.exam13.ArticleDAO"/>
+<bean id="was" class="com.bit.exam13.WriteArticleService" autowire="constructor"/>
+
+</beans>

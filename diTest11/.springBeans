@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.4.201804120850-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/com/bit/exam01/Beans.xml</config>
+		<config>src/com/bit/exam02/beans.xml</config>
+		<config>src/com/bit/exam03/beans3.xml</config>
+		<config>src/com/bit/exam05/beans5.xml</config>
+		<config>src/com/bit/exam11/beans11.xml</config>
+		<config>src/com/bit/exam12/beans12.xml</config>
+		<config>src/com/bit/exam13/beans13.xml</config>
+	</configs>
+	<autoconfigs>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>
