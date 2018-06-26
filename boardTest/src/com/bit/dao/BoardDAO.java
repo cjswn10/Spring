@@ -12,7 +12,7 @@ import com.bit.vo.BoardVO;
 public class BoardDAO {
 	public ArrayList<BoardVO> listAll() {
 		ArrayList<BoardVO> list = new ArrayList<BoardVO>();
-		String sql = "SELECT * FROM board";
+		String sql = "SELECT * FROM board ORDER BY no";
 		
 		try {
 			Connection conn = ConnectionProvider.getConnection();

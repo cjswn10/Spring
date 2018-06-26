@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dept">
+<!-- sqlMapConfig.xml에서 <typeAlias type="com.bit.vo.DeptVO" alias="deptVo"/>에 설정한 alias(->이름)을 resultType에 적는다-->
+  <select id="selectAll" resultType="deptVo">
+    select * from dept ORDER BY dno
+  </select>
+
+<!-- 파라미터가 한개일 때는 타입을 안써줘도 됨 -->
+	<insert id="insert">
+	  	INSERT INTO dept VALUES(#{dno},#{dname},#{dloc})
+	</insert> 
+	
+	<select id="detail" resultType="deptVo">
+		SELECT * FROM dept WHERE dno=#{dno}
+	</select>
+	
+	<update id="update" parameterType="deptVo">
+		UPDATE dept SET dname=#{dname}, dloc=#{dloc} WHERE dno=#{dno}
+	</update>
+	
+	<delete id="delete">
+		DELETE dept WHERE dno=#{dno}
+	</delete>
+</mapper>

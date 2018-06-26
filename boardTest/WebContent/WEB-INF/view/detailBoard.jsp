@@ -29,5 +29,8 @@
 				</tr>
 		</tbody>
 	</table>
+
+	<a href="updateBoard.do">수정</a>&nbsp;&nbsp;
+	<a href="deleteBoard.do">삭제</a>
 </body>
 </html>
